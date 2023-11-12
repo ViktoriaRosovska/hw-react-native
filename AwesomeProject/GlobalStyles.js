@@ -8,16 +8,16 @@ export const stylesByPlatform = Platform.select({
 export const GlobalStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
   },
+
   backgroundImage: {
     flex: 1,
     width: "100%",
     height: "100%",
-    // alignItems: "flex-start",
     justifyContent: "flex-start",
+    position: "relative",
   },
 
   text: {
@@ -34,15 +34,20 @@ export const GlobalStyles = StyleSheet.create({
   },
   form: {
     flex: 1,
+    zIndex: 1,
+    position: "absolute",
+    bottom: 0,
     alignItems: "center",
     justifyContent: "flex-start",
-    // height: 549,
+    height: 549,
+    minHeight: 406,
     width: "100%",
     backgroundColor: "#fff",
     paddingTop: 92,
     paddingLeft: 16,
     paddingRight: 16,
     marginTop: 263,
+    paddingBottom: 50,
   },
   rounded: {
     borderTopLeftRadius: 25,
@@ -59,6 +64,10 @@ export const GlobalStyles = StyleSheet.create({
     fontSize: 16,
     backgroundColor: "#F6F6F6",
   },
+  inputFocused: {
+    borderColor: "#FF6C00",
+    backgroundColor: "#fff",
+  },
   formButton: {
     button: {
       width: "100%",
@@ -71,7 +80,7 @@ export const GlobalStyles = StyleSheet.create({
       justifyContent: "center",
       paddingVertical: 16,
       paddingHorizontal: 32,
-      elevation: 3,
+      // elevation: 3,
     },
     text: {
       fontSize: 16,
@@ -80,6 +89,14 @@ export const GlobalStyles = StyleSheet.create({
       lineHeight: 19,
       letterSpacing: 0,
       color: "white",
+    },
+  },
+  marginBottom: {
+    mb16: {
+      marginBottom: 16,
+    },
+    mb43: {
+      marginBottom: 43,
     },
   },
 });

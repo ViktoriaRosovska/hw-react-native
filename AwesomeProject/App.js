@@ -2,6 +2,9 @@ import { useFonts } from "expo-font";
 
 import RegistrationScreen from "./Screens/RegistrationScreen";
 import LoginScreen from "./Screens/LoginScreen";
+import { KeyboardAvoidingView } from "react-native";
+import { SafeAreaView } from "react-native";
+import { GlobalStyles } from "./GlobalStyles";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -13,9 +16,9 @@ export default function App() {
     return null;
   }
   return (
-    <>
+    <SafeAreaView style={GlobalStyles.container}>
       <RegistrationScreen />
       {/* <LoginScreen /> */}
-    </>
+    </SafeAreaView>
   );
 }
