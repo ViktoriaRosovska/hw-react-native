@@ -17,8 +17,8 @@ export default function App() {
   }
   return (
     <SafeAreaView style={GlobalStyles.container}>
-      <RegistrationScreen />
-      {/* <LoginScreen /> */}
+      {/* <RegistrationScreen /> */}
+      <LoginScreen />
     </SafeAreaView>
   );
 }
